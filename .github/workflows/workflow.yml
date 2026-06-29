@@ -22,6 +22,7 @@ jobs:
     - name: Lint with flake8
       run: flake8 . --max-line-length=120
 
+    
     - name: Run unit tests with nose
-      run: |
-        nosetests
+      run: nosetests -c /dev/null
+
